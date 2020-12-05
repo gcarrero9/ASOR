@@ -4,4 +4,9 @@
 
 int main()
 {
+	if(setuid(0) == -1){
+		perror("error");
+	}
+	return 1;
+}
 
