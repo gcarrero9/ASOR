@@ -15,7 +15,7 @@
 #include <sys/resource.h>
 
 int atributos(void){
-	printf("Proceso HIJO");
+	printf("Proceso HIJO \n");
 	printf("PID: %i\n", getpid()); //mostrar el id del proceso
 	printf("PPID: %i\n", getppid()); //mostrar el id del proceso padre
 	printf("PGID: %i\n", getpgid(getpid())); //Grupo de procesos.
@@ -66,7 +66,7 @@ int main(int argc, char* argv[]){
 	}
 	else {
 		printf("Proceso PADRE: %i\n", getpid());
-		sleep(30);
+		sleep(3);
 		return 0;
 	}
 
